@@ -53,6 +53,7 @@ setInterval(updateBackgroundBasedOnTime, 3600000);
 
 
 // STORY JOKES //
+
 const storiesAndJokes = [
     "Why don't ghosts like rain? It dampens their spirits!",
     "What room does a ghost not need? A living room!",
@@ -62,10 +63,15 @@ const storiesAndJokes = [
 ];
 
 function showStory() {
+   
+    const audio = document.getElementById('audio');
+    audio.play();
+
     const storyDisplay = document.getElementById('storyDisplay');
     const randomIndex = Math.floor(Math.random() * storiesAndJokes.length);
     storyDisplay.textContent = storiesAndJokes[randomIndex];
 }
+
 
 
 // QUIZ //
@@ -78,7 +84,7 @@ const questions = [
     {
         question: "How many pounds did the world's largest pumpkin pie weigh?",
         answers: ["89 lbs", "350 lbs", "3699 lbs", "2150 lbs"],
-        correctIndex: 3
+        correctIndex: 2
     }
 ];
 
