@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Denk+One&display=swap" rel="stylesheet">
+    <title>Halloween Countdown!</title>
+</head>
+
+<nav class="navbar">
+    <a href="#halloweencountdown">Countdown</a>
+    <a href="#spookystory">Jokes</a>
+    
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/Ghostlylogo.png" alt="Logo" style="height: 100px;"> 
+        </a>
+    </div>
+    
+
+    <a href="#recipes">Recipes</a>
+    <a href="./ghosthunt.html">Ghost Hunting</a>
+</nav>
+
+
+<body>
+
+
+    <audio autoplay loop controls>
+        <source src="./Audio/ES_Night at the Cemetery - Etienne Roussel.mp3" type="audio/mp3">
+       
+        </audio>
+             
+    </audio>
+
+    <div class="heading">
+        <div class="background-container">
+            <img src="./images/moonforest.png" alt="Spooky forest background">
+            <div class="overlay"></div>
+            <div class="glitch" data-text=""What an excellent day for an exorcism."" — Demon, "The Exorcist">"What an excellent day for an exorcism." — Demon, "The Exorcist"</div>
+        </div>
+        
+        
+    </div>
+
+    <div class="halloweencountdown" id="halloweencountdown">
+<h1>Halloween Countdown</h1>
+<p>Time until Halloween:</p>
+        <h2 id="timer"></h2>
+   </div>
+   
+
+
+   <div class="spookystory" id="spookystory">
+    <div class="content">
+        <h1>Joke Generator!</h1>
+        <p id="storyDisplay">Click the button to get a spooky story or joke!</p>
+        <button onclick="showStory()">Get Spooky!</button>
+    </div>
+</div>
+
+   <div class="quiz">
+    <h2>How Well Do You Know Halloween?</h2>
+    <div class="quiz-container">
+        <h1>Halloween Quiz</h1>
+        <div id="question" class="question">What is Halloween?</div>
+        <div class="answers">
+            <button class="answer-btn" onclick="selectAnswer(0)">A harvest festival</button>
+            <button class="answer-btn" onclick="selectAnswer(1)">A ghost celebration</button>
+            <button class="answer-btn" onclick="selectAnswer(2)">All Hallows' Eve</button>
+            <button class="answer-btn" onclick="selectAnswer(3)">A pumpkin day</button>
+        </div>
+        <button id="submitBtn" onclick="submitQuiz()">Submit Answer</button>
+        <div id="result"></div>
+    </div>
+ 
+
+   <div class="recipes">
+    
+    <div class="menu-section" id="recipes">
+        <h1>A Spooku DIE-t RECIPES</h1>
+    
+    
+        <p>Spider Web Pancakes </p>
+        <img src="./images/Spiderweb Panckaes.png" alt="">
+
+        <h2>Lunch</h2>
+        <p>Mac-O-Lantern and Cheese</p>
+        <img src="./images/macolanternrecipe.png" alt="">
+
+        <h2>Snack</h2>
+        <p>Ghost Pizza Bagels</p>
+        <img src="./images/pizzaghostrecipe.png" alt="">
+
+        <h2>Dinner</h2>
+        <p>Mini Meatloaf Ghosts</p>
+        <img src="./images/ghostmeatloafrecipe1.png" alt="">
+        <img src="./images/meatloaf2.png" alt="">
+
+    </div>
+   </div>
+    
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="./images/Ghostlylogo.png" alt="Ghostly Gatherings Logo" style="height: 100px;"> 
+        </div>
+      
+        <div class="footer-social">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <div class="footer-contact">
+            <p>Contact us: kyleen.robertson@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+</html>
